@@ -17,6 +17,7 @@ const reportFolder = `saucedemo/report-${getDateTime()}`;
 
 export default defineConfig({
   testDir: './tests',
+  timeout: 60000,
   /* Run tests in files in parallel */
   fullyParallel: ConfigManager.isParallel(),
   workers: ConfigManager.getWorkers(), 
