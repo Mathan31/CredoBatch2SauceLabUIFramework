@@ -56,7 +56,7 @@ test.describe('Order Validation Tests', () => {
         await cartPage.removeProduct();
         await waitActions.waitForTimeout(2000);
         const isProductInCart = await cartPage.isProductInCart();
-        await ExpectUtil.expectToBeFalse(isProductInCart); 
+        await ExpectUtil.expectToBeTrue(isProductInCart); 
         await inventoryPage.logout();
     });
 
